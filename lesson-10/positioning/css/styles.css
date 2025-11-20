@@ -17,16 +17,23 @@ aside {
 
 /* STEP 2a: Postion static - this is the default, and the element is within the 'flow' of the page content */
 aside {
+	position: static;
+
 
 }
 
 /* STEP 2b: Position relative - this leaves the element in the page 'flow', but allows you to offset it's position with the top, right, bottom, and left properties. */
 aside {
-
+	position: relative;
+	top: 10px;
+	left: 100px;
 }
 
 /* STEP 2c: Position absolute - this removes the element from the page 'flow' (watch surrounding elements move in to take up the space that it occupied before), and allows you to place it with respect to the document window using the top, right, bottom, and left properties. Comment out the above top, right, bottom, and left properties and values. */
 aside {
+	position: absolute;
+	top: 50px;
+	right: 50px;
 
 }
 
@@ -34,6 +41,8 @@ aside {
 
 /* STEP 3: Position sticky - this leaves the element within the document 'flow', but if the user scrolls down, it will stick to the top or bottom of the document window using a specified distance (top or bottom properties). Comment out the above top, right, bottom, and left properties and values, then experiment with this - be sure to reduce the width of the browser window to enable scrolling. */
 aside {
+	position: sticky;
+	top: 0;
 
 }
 
@@ -41,7 +50,9 @@ aside {
 
 /* STEP 4a: We are going to style the P element with the '?' inside it - comment out the above top, right, bottom, and left properties and values for the ASIDE, then position the ASIDE with absolute - place it 25px from the top, and 25px from the right of the document window (HTML element) */
 aside {
-
+	position: absolute;
+	top: 25px;
+	right: 25px;
 }
 
 aside p strong {

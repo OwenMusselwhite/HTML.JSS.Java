@@ -3,6 +3,7 @@
 <head>
 	<title>Lists | COMP1002 HTML, CSS, and JS Fundamentals</title>
 	<meta charset="utf-8">
+	<link href="css/lists.css" rel="stylesheet"/>
 	<style>
 		html {
 			font-family: Helvetica, Arial, sans-serif;
@@ -10,6 +11,10 @@
 		/* STEP 5: Styling Lists (list-style-type, list-style-position, list-style-image) */
 		/* STEP 5a: list-style-type (none | square | circle | disc) */
 		ul {
+
+			list-style-type: disc;
+			list-style-image: url("images/check.png");
+			list-style-position: outside;
 
 		}
 		/* STEP 5b: Manipulate the list-style-position (inside | outside) in the rule above */
@@ -19,14 +24,15 @@
 		}
 		/* STEP 5d: list-style-type (armenian | decimal | decimal-leading-zero | georgian | lower/upper-alpha | lower-greek | lower-latin | lower/upper-roman) - change in the rule below */
 		ol {
-			/* list-style-type: upper-latin; */
+			list-style-type: decimal; 
 		}
 		/* STEP 6: Laying Out Lists horizontally - use display: inline-block or inline */
 		li {
-
+			display: inline-block;
 		}
 		/* STEP 7: Targetting nested lists with contextual selectors - comment out all above declarations first */
 		ul ul {
+			background-color: lightgrey;
 
 		}
 		ul ul ul {
@@ -49,15 +55,71 @@
 	<main>
 		<!-- STEP 1: Build a simple Unordered List -->
 		<h2>Unordered List</h2>
+		<ul>
+			<li>Flour</li>
+			<li>Milk</li>
+			<li>eggs</li>
+			<li>Sugar</li>
+			<li>Butter</li>
+		</ul>
 
 		<!-- STEP 2: Build a simple Ordered List -->
 		<h2>Ordered List</h2>
 
+		<ol>
+			<li>Preheat oven to 350°F (175°C).</li>
+			<li>Mix dry ingredients together.</li>
+			<li>Add wet ingredients and stir until smooth.</li>
+			<li>Pour batter into a greased baking pan.</li>
+			<li>Bake for 30-35 minutes or until a toothpick comes out clean.</li>
+		</ol>
+
 		<!-- STEP 3: Build a Definition List -->
 		<h2>Definition List</h2>
 
+		<dl>
+			<dt>HTML</dt>
+			<dd>HyperText Markup Language - the standard language for creating web pages.</dd>
+
+			<dt>CSS</dt>
+			<dd>Cascading Style Sheets - a style sheet language used for describing the presentation of a document written in HTML.</dd>
+
+			<dt>JavaScript</dt>
+			<dd>A programming language commonly used to create interactive effects within web browsers.</dd>
+
+		</dl>
+
 		<!-- STEP 4: Build a nested list -->
 		<h2>Nested Lists</h2>
+
+		<ul>
+			<li>Fruits
+				<ul>
+					<li>Apple</li>
+					<li>Banana</li>
+					<li>Citrus
+						<ul>
+							<li>Orange</li>
+							<li>Lemon</li>
+							<li>Lime</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Vegetables
+				<ul>
+					<li>Carrot</li>
+					<li>Broccoli</li>
+					<li>Spinach</li>
+				</ul>
+			</li>
+			<li>Dairy
+				<ul>
+					<li>Milk</li>
+					<li>Cheese</li>
+					<li>Yogurt</li>
+				</ul>
+			</li>
 
 	</main>
 	<footer>

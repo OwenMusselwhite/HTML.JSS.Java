@@ -1,3 +1,4 @@
+/*General styles for the whole page*/
 html, body {
   margin: 0;
   padding: 0;
@@ -5,11 +6,12 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color: white;
   background-image: url('../images/inceptioncover-notext.jpg'); /* Replace with your actual image path */
-  background-size: cover;
+  background-size: original;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black;
 }
-
+/*All text*/
 .container {
   
   display: flex;
@@ -19,46 +21,295 @@ html, body {
   padding: 2rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-
+/*The black quote at the top*/
 header {
   color: black;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   margin-top: 2rem;
+  word-spacing: 0.6em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  letter-spacing: .1em;
 }
 
+/*The cast in the middle*/
 .cast {
   font-size: 1rem;
   text-align: center;
-  margin: 1rem 0;
-  line-height: 1.6;
+  margin-bottom: 1rem;  line-height: 1.9;
+  position: absolute;
+  bottom: 280px
+  
 }
 
+/*The big red Inception title*/
 section.title {
   color: red;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 1rem 1;
   letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 120px;
 }
 
-section.details {
-  font-size: 1.2rem;
+/*The details above the title*/
+section.details1 {
+  color: lightgrey;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: -10rem;
+  position: absolute;
+  bottom: 410px;
+  word-spacing: 0.4em;
+  letter-spacing: 0.12em;
 }
 
+/*The details under the title*/
+section.details2 {
+  color: lightgrey;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: -10rem;
+  position: absolute;
+  bottom: 260px;
+  word-spacing: 0.02em;
+  letter-spacing: 0.05em;
+}
+
+/*The production credits at the bottom*/
 footer {
   color: gray;
   font-size: 0.9rem;
   text-align: center;
   opacity: 0.8;
+  margin-bottom: 1em;
+  position: absolute;
+  bottom: 20px;
 }
-
-section.details > em {
+/*Emphasized text in details sections*/
+section.details1 > em {
+  color: white;
   font-weight: bold;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
+/*Emphasized text in details sections*/
+section.details2 > em {
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+}
+/*didnt end up using this*/
+.spacer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/*also scrapped this and decided to do individual classes for each name*/
+.cast .firstnames{
+  color: red;
+  word-spacing: 2em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.cast .lastnames{
+  color: white;
+  word-spacing: 2em;
+  font-weight: bold;
+}
+
+
+/*Individual classes for each cast member to position them correctly*/
+.leonardo{
+  letter-spacing: 1.9em;
+  word-spacing: 1.8em;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 335px;
+}
+
+.ken{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  left: 380px;
+  bottom: 300px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+}
+.ken > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.gordon{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 490px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.gordon > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.marion{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 630px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.marion > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.ellen{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 730px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.ellen > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.tom{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 800px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.tom > em{
+  color: white;
+  font-size: 1.1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.cillian{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 874px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.cillian > em{
+  color: white;
+  font-size: 1.1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.tom1{
+  font-weight: bold;
+  font-size: .9rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 960px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.tom1 > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+.michael{
+  font-weight: bold;
+  font-size: .8rem;
+  text-shadow: none;
+  position: absolute;
+  bottom: 300px;
+  left: 1060px;
+  color: red;
+  text-transform: capitalize;
+  text-align:center;
+  line-height: 1.1;
+
+
+}
+.michael > em{
+  color: white;
+  font-size: 1em;
+  font-style: normal;
+  text-align:center;
+
+}
+
+

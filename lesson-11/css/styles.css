@@ -14,12 +14,15 @@ html {
 
 /* STEP 12: Comment out all colored borders, and put a background-color on the below NAV element */
 nav {
+
+    background-color: lightgray;
+    border: 5px solid hotpink;
     
     
 }
 /* STEP 1: Outline elements to help with styling (NAV, UL, LI, and A) */
 nav ul {
-    
+    border: 5px solid red;
     /* STEP 2: Turn off list markers */
     
     /* STEP 3: Zero out padding on all UL elements in the NAV */
@@ -28,17 +31,17 @@ nav ul {
     
 }
 nav li {
-    
+    border: 5px solid orange
     /* STEP 4: Set the 1st-level LI element to render horizontally */
     
     /* STEP 6: Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
-    
+    position: relative;
 }
 nav li ul {
     /* STEP 7: Set position of 2nd-level lists to 'absolute' */
-    
+    position: absolute;
     /* STEP 8: Hide the 2nd-level lists */
-    
+    left: -9999px;
     /* STEP 11: Set a consistent width on the 2nd-level UL (15em or so) */
     
     /* STEP 15: Add a top colored border to the 2nd-level UL to make it look like it is part of the navigation bar */
@@ -46,7 +49,7 @@ nav li ul {
 }
 /* STEP 5: Arrange the 2nd-level list items vertically again */
 nav li li {
-    
+    display: block;
 }
 nav li a {
     
@@ -54,26 +57,35 @@ nav li a {
     
 }
 /* STEP 9: Show the 2nd-level list (UL) when the parent LI is moused over (:hover) or it is in focus (:focus-within) - you will need to build a grouped selector */
-
+nav li:hover ul, /*if hoverd on*/
+nav li:focus-within ul {/*if focused on using tab (not very imortant)*/
+    left: auto;
+}
 
 /* STEP 14: Style the hyperlinks using pseudoclasses - :link, :visited, :focus, :hover, :active (LVFHA) */
 nav a {
-    
+    /*background-color: lightblue;*/
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .25em;
 }
 nav a:link {
-    
+    color: white;
 }
 nav a:visited {
-    
+    color: lightgrey;
 }
 nav a:focus {
-    
+    background-color: orangered;
+    outline: none;
 }
 nav a:hover {
-    
+    background-color: red;
 }
 nav a:active {
-    
+    background-color: yellow;
+    color: red;
 }
 
 

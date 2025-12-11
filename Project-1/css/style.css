@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Global reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    /*
+    background-image: url('../images/7 - 8-Litre Exterior.jpg'); /* Replace with your actual image path 
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    */
+    background-color: black;
+}
+
+
+
+
+
+/* Navigation bar */
+nav {
+    background-color: grey;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 75px; /* modern spacing between list items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px; /* increases clickable area and visual spacing */
+}
+
+nav ul li a:hover { /* Added hover effect*/
+    text-decoration: underline; 
+    font-size: 1.1em;
+}
+
+/* Header */
+header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: white; /* deep grey for elegance */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+/* Sections */
+.slogan {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.banner{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

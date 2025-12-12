@@ -72,7 +72,7 @@ header em { /*Just the word "Introducing" before the header*/
 }
 
 .intro {
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
@@ -177,6 +177,19 @@ header em { /*Just the word "Introducing" before the header*/
     padding: 8px 12px; /* increases clickable area and visual spacing */
 }
 
+.description {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #222;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
 /*---end of sections---*/
 
 
@@ -268,3 +281,77 @@ footer a:hover {
     }
 }
 /* ------------------End of Specs page styling ----------------------*/
+
+/* ------------------Feedback / Reviews page styling ----------------- */
+.reviews {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    color: #111;
+    font-family: 'Work Sans', sans-serif;
+}
+.reviews h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.review-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.review-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.05em;
+}
+.review-card .rating {
+    margin: 0 0 8px 0;
+    font-size: 0.85em;
+    color: #666;
+}
+.review-form {
+    margin-top: 18px;
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 6px;
+}
+.review-form form {
+    display: grid;
+    gap: 8px;
+}
+.review-form input[type="text"], .review-form select, .review-form textarea {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.review-form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------End Feedback styling ----------------- */

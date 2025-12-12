@@ -399,3 +399,51 @@ footer a:hover {
 }
 
 /* ----------------End Corporate styling ---------------- */
+
+/* ------------------Terms & Conditions styling ---------------- */
+.terms {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    color: #111;
+    font-family: 'Work Sans', sans-serif;
+}
+.terms h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+.terms-toc ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.terms-toc a {
+    text-decoration: none;
+    color: #333;
+    background: #f3f3f3;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+.terms h3 {
+    margin-top: 18px;
+}
+.terms p {
+    line-height: 1.6;
+}
+.terms .last-updated {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+@media (max-width: 700px) {
+    .terms { padding: 12px; margin: 12px; }
+    .terms-toc ul { gap: 8px; }
+}
+
+/* ----------------End Terms styling ---------------- */

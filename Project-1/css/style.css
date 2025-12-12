@@ -228,7 +228,7 @@ footer a:hover {
 
 
 /* -------------------Specs page styling ---------------------*/
-.specs {
+.specs { /* Main container for specs page */
     max-width: 1000px;
     margin: 24px auto;
     padding: 20px;
@@ -237,41 +237,41 @@ footer a:hover {
     color: #111;
     font-family: 'Work Sans', sans-serif;
 }
-.specs h2 {
+.specs h2 { /* Specs page main heading */
     margin-top: 0;
     font-family: 'Playfair Display', serif;
 }
-.specs-grid {
+.specs-grid { /* Grid layout for specs content */
     display: flex;
     gap: 24px;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.specs .spec-list {
+.specs .spec-list { /* Specification list styling */
     flex: 1 1 320px;
 }
-.specs .spec-list ul {
+.specs .spec-list ul { /* Unordered list styling */
     padding-left: 18px;
 }
-.specs .spec-list li {
+.specs .spec-list li { /* List item styling */
     margin: 10px 0;
 }
-.specs .spec-image {
+.specs .spec-image { /* Image container styling */
     flex: 1 1 320px;
 }
-.specs .spec-image img {
+.specs .spec-image img { /* Image styling */
     width: 100%;
     height: auto;
     border-radius: 6px;
 }
-.spec-notes {
+.spec-notes { /* Additional notes section */
     margin-top: 12px;
     font-size: 0.95em;
     color: #333;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) { /*adjustments for smaller screens */
     .specs {
         padding: 12px;
         margin: 12px;
@@ -283,7 +283,8 @@ footer a:hover {
 /* ------------------End of Specs page styling ----------------------*/
 
 /* ------------------Feedback / Reviews page styling ----------------- */
-.reviews {
+
+.reviews { /* Main container for reviews page */
     max-width: 1000px;
     margin: 24px auto;
     padding: 20px;
@@ -292,48 +293,48 @@ footer a:hover {
     color: #111;
     font-family: 'Work Sans', sans-serif;
 }
-.reviews h2 {
+.reviews h2 { /* Reviews page main heading */
     margin-top: 0;
     font-family: 'Playfair Display', serif;
 }
-.reviews-grid {
+.reviews-grid { /* Grid layout for reviews */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin-bottom: 18px;
 }
-.review-card {
+.review-card { /* Individual review card styling */
     background: #fff;
     border-radius: 6px;
     padding: 14px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
-.review-card h3 {
+.review-card h3 { /* Reviewer name styling */
     margin: 0 0 6px 0;
     font-size: 1.05em;
 }
-.review-card .rating {
+.review-card .rating { /* Star rating styling */
     margin: 0 0 8px 0;
     font-size: 0.85em;
     color: #666;
 }
-.review-form {
+.review-form { /* Review submission form styling */
     margin-top: 18px;
     background: #fafafa;
     padding: 12px;
     border-radius: 6px;
 }
-.review-form form {
+.review-form form { /* Form layout */
     display: grid;
     gap: 8px;
 }
-.review-form input[type="text"], .review-form select, .review-form textarea {
+.review-form input[type="text"], .review-form select, .review-form textarea { /* Form input styling */
     padding: 8px 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-family: inherit;
 }
-.review-form button {
+.review-form button { /* Submit button styling */
     background: #333;
     color: #fff;
     padding: 10px 12px;
@@ -343,7 +344,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 900px) { /*adjustments for smaller screens */
     .reviews-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -357,7 +358,8 @@ footer a:hover {
 /* ----------------End Feedback styling ----------------- */
 
 /* ------------------Corporate page styling ----------------- */
-.corporate {
+
+.corporate { /* Main container for corporate page */
     max-width: 1100px;
     margin: 24px auto;
     padding: 20px;
@@ -366,33 +368,33 @@ footer a:hover {
     color: #111;
     font-family: 'Work Sans', sans-serif;
 }
-.corporate h2, .corporate h3 {
+.corporate h2, .corporate h3 { /* Corporate page headings */
     font-family: 'Playfair Display', serif;
     margin-top: 0;
 }
-.corporate-grid {
+.corporate-grid { /* Grid layout for corporate content */
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
     align-items: start;
 }
-.corporate-about, .corporate-history, .corporate-mission {
+.corporate-about, .corporate-history, .corporate-mission { /* Section styling */
     background: #fff;
     padding: 14px;
     border-radius: 6px;
 }
-.corporate-leadership {
+.corporate-leadership { /* Leadership section styling */
     background: #fff;
     padding: 14px;
     border-radius: 6px;
 }
-.contact-card {
+.contact-card { /* Contact information card styling */
     margin-top: 18px;
     background: #fafafa;
     padding: 12px;
     border-radius: 6px;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px) { /*adjustments for smaller screens */
     .corporate-grid {
         grid-template-columns: 1fr;
     }
@@ -401,7 +403,8 @@ footer a:hover {
 /* ----------------End Corporate styling ---------------- */
 
 /* ------------------Terms & Conditions styling ---------------- */
-.terms {
+
+.terms { /* Main container for terms page */
     max-width: 900px;
     margin: 24px auto;
     padding: 20px;
@@ -410,11 +413,11 @@ footer a:hover {
     color: #111;
     font-family: 'Work Sans', sans-serif;
 }
-.terms h2 {
+.terms h2 { /* Terms page main heading */
     margin-top: 0;
     font-family: 'Playfair Display', serif;
 }
-.terms-toc ul {
+.terms-toc ul {     /* Table of contents list styling */
     list-style: none;
     padding: 0;
     display: flex;
@@ -422,7 +425,7 @@ footer a:hover {
     gap: 12px;
     margin-bottom: 12px;
 }
-.terms-toc a {
+.terms-toc a { /* Table of contents link styling */
     text-decoration: none;
     color: #333;
     background: #f3f3f3;
@@ -430,18 +433,18 @@ footer a:hover {
     border-radius: 4px;
     font-size: 0.95em;
 }
-.terms h3 {
+.terms h3 { /* Section headings styling */
     margin-top: 18px;
 }
-.terms p {
+.terms p { /* Paragraph styling */
     line-height: 1.6;
 }
-.terms .last-updated {
+.terms .last-updated { /* Last updated note styling */
     margin-top: 20px;
     font-size: 0.9em;
     color: #555;
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) { /*adjustments for smaller screens */
     .terms { padding: 12px; margin: 12px; }
     .terms-toc ul { gap: 8px; }
 }
